@@ -1,0 +1,13 @@
+package event;
+
+public enum EventType {
+
+    EARTH_FLIGHT_ARRIVED,
+    EXPEDITION_DEPART,
+    EXPEDITION_RETURN,
+    WATER_FOUND,
+    OXYGENE_FOUND,
+    ALIENS_ATTACK,
+    EVACUATION_STARTED
+
+}
