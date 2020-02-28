@@ -20,12 +20,16 @@ public class CommandPost {
 
     public void endWorking() {
         eventManager.unsubscribeAll();
+        System.out.println("All listeners are OFF.");
     }
 
     public void sendEvent(Event event) {
         sendMessageToEarth("CommandPost notify: new event happened. EventType = " + event.getEventType());
         eventManager.notifyListener(event);
         System.out.println("");
+        if (EventType.EVACUATION_STARTED == event.getEventType()) {
+            endWorking();
+        }
     }
 
     private void sendMessageToEarth(String message) {
