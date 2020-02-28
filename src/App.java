@@ -2,6 +2,8 @@ import event.Event;
 import event.EventManager;
 import event.EventType;
 
+/** Наблюдатель, также известен как: Издатель-Подписчик, Слушатель, Observer */
+
 public class App {
 
     public static void main(String[] args) {
